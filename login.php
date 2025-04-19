@@ -7,6 +7,7 @@
 
   // $koneksi = new mysqli("localhost","root","","e_surat-2");
   include "koneksi/koneksi.php";
+  include "include/hari.php";
 
   if($_SESSION['admin'] || $_SESSION['user']){
         header("location:index.php");
@@ -59,8 +60,8 @@
   <div class="login-box-body" style="text-align: center;">
     <img style="text-align: center;"  src="images/<?php echo $data['foto'] ?>" width="160" height="160" >
     </br></br>
-    <a href="" style="color: black; font-size: 20px;"><b><?php echo strtoupper($title); ?></a>
-    <p class="login-box-msg" style="color: black; font-size: 16px;">Please Login Your Account</p>
+    <!-- <a href="" style="color: black; font-size: 20px;"><b><?php echo strtoupper($title); ?></a> -->
+    <p class="login-box-msg" style="color: black; font-size: 16px;"><b>SISTEM INFORMASI <?php echo strtoupper($title); ?></p>
 
     <form  method="post">
       <div class="form-group has-feedback">
